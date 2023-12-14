@@ -1,0 +1,50 @@
+### GET http://localhost:8080/ HTTP/1.1
+
+###
+
+GET http://localhost:8080/produtos HTTP/1.1 
+Authorization: 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
+
+###
+
+GET http://localhost:8080/produto/36 HTTP/1.1 
+Authorization: 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
+
+###
+
+POST http://localhost:8080/produto HTTP/1.1 
+Authorization:  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
+Content-Type: application/json
+
+{
+
+    "id": 33,
+
+        "nome": "Chapinha da Jiafei", "preco": 9999999, "quantidade": 1, "categoria": "Mega Jiafei Produtos", "fabricante": {
+
+            "nomef": "Jiafei Inc", "endereco": "Floptropica Jiafeia, Avenue cupcakke 69 "
+
+        }
+
+}
+
+
+###
+
+PUT http://localhost:8080/produto/33 
+Authorization: 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 
+Content-Type: application/json
+
+{
+
+    "id": 33,
+
+        "nome": "Chapinha da Jiafei", "preco": 200, "quantidade": 1, "categoria": "Mega Jiafei Produtos", "fabricante": {
+
+            "nomef": "Jiafei Inc", "endereco": "Floptropica Jiafeia, Avenue cupcakke 69 "
+
+        }
+
+}
+
+###
